@@ -27,9 +27,11 @@ export function RouteNavigation() {
 
   return (
     <GluestackUIProvider config={theme}>
-      <NavigationContainer theme={navigationTheme}>
-        <AppRoutes />
-      </NavigationContainer>
+      <Box bg={theme.theme.colors.background} flex={1}>
+        <NavigationContainer theme={navigationTheme}>
+          <AppRoutes />
+        </NavigationContainer>
+      </Box>
     </GluestackUIProvider>
   )
 }
